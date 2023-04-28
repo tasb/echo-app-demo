@@ -16,6 +16,11 @@ env:
   AZURE_WEBAPP_NAME: "tbernardo-echo-app"
   ARTIFACT_NAME: "echo-webapp"
 
+permissions:
+  id-token: write
+  contents: read
+  
+
 jobs:
   build:
 
