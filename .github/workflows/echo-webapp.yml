@@ -1,4 +1,4 @@
-name: TodoWebapp
+name: EchoWebApp
 
 on:
   workflow_dispatch:
