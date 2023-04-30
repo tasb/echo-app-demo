@@ -4,10 +4,17 @@ terraform {
         storage_account_name = "echoapptfbackend"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
+  }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.7.0"
     }
+  }
 }
 
 provider "azurerm" {
+  use_oidc = true
   features {}
 }
 
