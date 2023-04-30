@@ -91,6 +91,7 @@ jobs:
     - name: terraform init
       run: |
         cd ./terraform
+        export
         terraform init -backend-config="key=echoapp.api.uat.tfstate"
 
     - name: terraform validate
